@@ -2,7 +2,9 @@
   <head>
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <!-- <script src="https://unpkg.com/@tensorflow/tfjs@1.2.2/dist/tf.min.js"></script> -->
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!-- <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.3/dist/mobilenet.min.js"></script> -->
   </head>
   <body>
     <div id="console"></div>
@@ -14,6 +16,14 @@
       width="227"
       height="227"
     />
+    <video
+      autoplay
+      playsinline
+      muted
+      id="webcam"
+      width="224"
+      height="224"
+    ></video>
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>
